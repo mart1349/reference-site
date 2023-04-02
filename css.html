@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header role="banner" id="banner">
+       <h1>Raven Martin's Reference Website</h1>
+            <nav role="navigation" id="nav"> 
+            <a href="html.html">Introduction to HTML</a>
+        
+            <h2>Introduction to CSS</h2>
+            <ul>
+                <li><a href="#font-properties">Font properties</a></li>
+                <li><a href="#text-decorations">Text Decorations</a></li>
+                <li><a href="#different-states-for-links">Different States for Links</a></li>
+                <li><a href="#google-font">Adding Google Font</a></li>
+                <li><a href="#margin">Margin</a></li>
+                <li><a href="#padding">Padding</a></li>
+                <li><a href="#shorthand">Margin & Padding Shorthand</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" role="main">
+        <section id="font-properties">
+            <h2>Font properties</h2>
+                <h3>font-size</h3>
+                    <p>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</p>
+                    <p>Ex: 2rem, 1.125em, 24px</p>
+                <h3>font-weight</h3>
+                    <p>Sets how thick or thin characters in text should be displayed</p>
+                    <p>Ex: bold, normal, 700</p>
+                <h3>font-style</h3>
+                    <p>Specifies font style for text</p>
+                    <p>Ex: italic or normal</p>
+                <h3>line-height</h3>
+                    <p>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</p>
+                    <p>Ex: 1.5</p>
+        </section>
+        <section id="text-decorations">
+            <h2>Text Decorations</h2>
+                <h3>text-transform</h3>
+                    <p>Change capitalization such as uppercase, lowercase, capitalize. It’s a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</p>
+                    <p>Ex: uppercase, lowercase, capitalize</p>
+                <h3>text-decorations</h3>
+                    <p>Specifies the decoration added to text. The only things in a website that should be underlined are links.</p>
+                    <p>Ex: none, underline, line-through, overline</p>
+                <h3>text-align</h3>
+                    <p>Specifies the horizontal alignment of text in an element</p>
+                    <p>Ex: left, center (American spelling), right, justify</p>
+                <h3>text-indent</h3>
+                    <p>Indent the first line of text like traditionally printed materials</p>
+                    <p>Ex: 1rem, 2em, 20px, 25%</p>
+                <h3>text-shadow</h3>
+                    <P>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</p>
+                <p>text-shadow: 2px 2px #ff0000;</h3>
+        </section>
+        <section id="different-states-for-links">
+            <h2>Different States for Links</h2>
+            <P>Links can be styled with any CSS property (e.g. color, font-family, background, etc.)</P>
+                <h3>Color</h3>
+                    <p>color: insert color;</p>
+                <h3>font-size</h3>
+                    <p>font-size: insert font size;</p>
+                <h3>background-color</h3>
+                    <p>background-color: insert color;</p>
+                <h3>font-family</h3>
+                    <p>font-family: insert family;</p>
+                <h3>text-decoration</h3>
+                    <p>font-family: none, underline;</p>
+                <h3>Links</h3>
+                <ul>
+                    <li>a:link {</li>
+                    <li>a:visited {</li>
+                    <li>a:hover {</li>
+                    <li>a:focus {</li>
+                    <li>a:active {</li>
+                    <li>a:one: {</li>
+                    <li>a:button: {</li>
+                </ul>
+        </section>
+
+        <section id="google-font">
+            <h2>Adding a Google Font</h2>
+            <p> Add the links from the website in the head in the HTML file.</p>
+            <p>apply the font by using font-family with the name in "" and the type of font after a comma.</p>
+            <p>Ex: font-family: "Vesper-Libre", serif;</p>
+        </section>
+
+        <section id="margin">
+            <h2>Margin</h2>
+                <p>The margin is an invisible space around your box. It adds spacing outside of the box, pushing other boxes away from the box. Margins can have positive or negative values.</p>
+                <p>padding-top;</p>
+                <p>padding-right;</p>
+                <p>padding-bottom;</p>
+                <p>padding-left;</p>
+                
+        </section>
+
+        <section id="padding">
+            <h2>Padding</h2>
+                <p>Padding adds spacing inside the box, pushing the content away from the border. The background color is visible with the padding.</p>
+                <p>margin-top;</p>
+                <p>margin-right;</p>
+                <p>margin-bottom;</p>
+                <p>margin-left;</p>
+                
+        </section>
+        <section id="shorthand">
+            <h2>Margin & Padding Shorthand</h2>
+            <p>padding: 0 30px 40px 4em; (top right bottom left)</p>
+            <p>margin: -10px 30px 40px 4em; (top right bottom left)</p>
+            <p>If you leave off numbers
+                from the list, the browser
+                will match the opposing
+                sides value for any missing
+                numbers.</p>
+            <ul>
+                <li>3 numbers: top, left/right, bottom</li>
+                <li>2 numbers: top/bottom & left/right</li>
+                <li>1 number: specifies a margin or
+                padding on all 4 sides.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+<footer>
+    <a href="#banner">Back to top</a>
+</footer>
+</html> 

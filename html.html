@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design 1 Reference Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+</body>
+    <header role="banner" id="banner">
+        <h1> Raven Martin's Reference Website</h1>
+            <a href="css.html">Introduction to CSS</a>
+        <nav role="navigation" id="nav">
+            <h2>Introduction to HTML</h2>
+            <ul>
+                <li><a href="#naming-coventions">Naming Conventions</a></li>
+                <li><a href="#commit-messages">Commit messages</a></li>
+                <li><a href="#html-elements">HTML Elements</a></li>
+                <li><a href="#structuring content">Structuring Content</a></li>
+                <li><a href="#Linking to an element on the same page">Linking to an element on the same page</a></li>
+                <li><a href="#Commenting in HTML">Commenting in HTML</a></li>
+                <li><a href="#Landmark roles">Landmark roles</a></li>
+                <li><a href="#Labeling links">Labeling Links</a></li>
+                <li><a href="#Skip links">Skip Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main role="main" id="main">
+        <section id="naming-coventions">
+            <h2> Naming Coventions </h2>
+            <h4>Three rules to follow when naming files for the web</h4>
+                <ul>
+                    <li>All lowercase</li>
+                    <li>No Spaces</li>
+                    <li>Only letters, numbers, and dashes</li>    
+                </ul>
+        </section>
+
+        <section id="commit-messages">
+            <h2>Commit Messages</h2>
+                <ul>
+                    <li>Minimun 3 words & 10 characters</li>
+                    <li>Proper spelling & grammar</li>
+                    <li>Capital starting letter, no period</li>
+                    <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+                    <li>Pretend every commit starts with the phrase: “This commit will…”</li>
+                </ul>      
+        </section>
+
+        <section id="html-elements">
+            <h2>HTML Elements</h2>
+
+                <h3>Paragraph</h3>
+                    <ul>
+                        <p><strong>&lt;P&gt;</strong> Defines a paragraph of text. It is a block-level element and always starts on a new line. Before and after each paragraph,browsers add margin automatically.</p>
+                    </ul>
+
+                <h3>Headings</h3>
+                    <ul>
+                        <p>The heading tags are used to mark headings according to their importance. The &lt;h1&gt; tag stands for the most important heading of the web page and the &lt;h6&gt; stands for the least important and smallest one.</p>
+                    </ul>
+
+                <h3>Lists</h3>
+                    <ol>
+                        <strong><li>&lt;ul&gt; Unordered list</li> </strong>
+                            <p>&lt;li&gt; List item</p>
+                        <strong><li>&lt;ol&gt; Ordered list</li></strong>
+                            <p>&lt;li&gt; List item</p>
+                        <strong><li>&lt;dl&gt; Description list</li></strong>
+                            <p>&lt;dt&gt; Term or name</p>
+                            <p>&lt;dd&gt; description of term</p>
+                            <p>&lt;dd&gt; description of term</p>
+                    </ol>
+
+                <h3>Quotes and Citations</h3>
+                    <ul>
+                        <p><strong>&lt;q&gt;</strong> Used to mark up quotes embedded in other elements like a paragraph.</p>
+                        <p><strong>&lt;blockquote&gt;</strong> For large stand alone quotes.</p>
+                        <p><strong>&lt;cite&gt;</strong> Marking the source of the quote.</p>
+                    </ul>
+
+                <h3>Phrasing elements</h3>
+                    <ul>
+                        <p><strong>&lt;em&gt;</strong> Emphasis</p>
+                        <p><strong>&lt;strong&gt;</strong> Lots of emphasis, strong importance or urgency (Bold)</p>
+                        <p><strong>&lt;i&gt;</strong> Another language, technical term, title. Visual only italics.</p>
+                        <p><strong>&lt;b&gt;</strong> A Keyword</p>
+                    </ul>
+                
+                <h3> &lt;a hef=""> Link text &lt;/a &gt; </h3>
+                    <ul>
+                        <p>The opening &lt;a&gt; tells where the link should start and the closing &lt;/a&gt; indicates where the link ends. To create a hyperlink, you should use the &lt;a&gt; tag and href attribute, the value of which is the URL, or location, where the link is pointing to.</p>
+                    </ul>
+
+                <h3> &lt;img src=""alt=/&gt;</h3>  
+                    <ul>
+                        <p>Images in websites are not embedded in the website, but linked to by the HTML document. Images need two attributes to specify extra details about the image: the location of the image and the alternative content.</p>
+                    </ul>
+
+                <h3>Generic elements</h3>
+                    <ul>
+                        <p>TML elements should always be chosen to give meaning to your content but sometimes we need an element that is meaningless.</p>
+                        <p>There may be times when you just need a generic element to target content; most often to later manipulate styling with CSS or behavior with JS.</p>
+                        <p><strong>&lt;div&gt;</strong> Block element used to group elements together</p>
+                        <p><strong>&lt;span&gt;</strong> An inline container used to mark up a part of a text, or part of a document.</p>
+                    </ul>
+
+                <h3>Attributes</h3>
+                    <ul>
+                        <p>HTML attributes provide additional information about HTML elements.</p>
+                        <p>&lt;a href=""&gt; Link text &lt;/a&gt;</p>
+                    </ul>
+                
+                <h3>Commun Global Attributes</h3>
+                    <ul>
+                        <p>Allows us to target any HTML element within our CSS or JavaScript.</p>
+                        <p>&lt;p class=””> You can use a class <strong>multiple</strong> times throughout your HTML and attach it to different types of elements.</p>
+                        <p>&lt;p id=""> Only allowed to use one unique id <strong>once</strong> in each html page.</p>
+                    </ul>
+        </section>
+
+        <section id="structuring content">
+            <h2>Structuring Content</h2>
+                <p>Organizing our HTML elements content within typical regions of a web page.</p>
+
+
+                <h3>&lt;header> … &lt;/header></h3>
+                    <ul>
+                        <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc..</p>
+                    </ul>
+                    
+                <h3>&lt;footer> ... &lt;/footer></h3>
+                    <ul>
+                        <p>Many webpages end their pages with a footer at the bottom. This often includes lists of links, copyright information, extra information about the company, terms and services.</p>
+                    </ul>
+
+                <h3>&lt;main> ... &lt;/main></h3>
+                    <ul>
+                        <p>The main element wraps around the main content of the page. It’s only used once per page and it tells the browser that this is where the main content is.</p>
+                    </ul>
+
+                <h3>&lt;section> ... &lt;/section></h3>
+                    <ul>   
+                        <p>Section is used to wrap around related pieces of content. Usually each section has its own heading.</p>
+                    </ul>
+
+                <h3>&lt;article> ... &lt;/article></h3>
+                    <ul>
+                        <p>The article element represents a self-contained composition in a web page, which is intended to be independently distributable or reusable. </p>
+                        <p>Examples include blog post, product card, interactive widget, etc…</p>
+                    </ul>
+
+                <h3>&lt;nav ... &lt;/nav></h3>
+                   <ul>
+                        <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
+                    </ul>
+
+                <h3>&lt;aside> ... &lt;/aside></h3>
+                    <ul>
+                        <p>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. This content will frequently be presented as a sidebar on a website.</p>
+                    </ul>
+        </section>
+
+        <section id="Linking to an element on the same page">
+            <h2>Linking to an element on the same page</h2>
+
+                <h3>Link to an absolute url/path</h3>
+                    <p>Absolute URLs offer a full address for a website or other resource on the internet.</p>
+                    <p>&lt;a href="https://www.website.com"This link goes to another url&lt;/a></p>
+                    <p>&lt;img src="https://www.website.com/images/image.jpg" alt="description"></p>
+                <h3>Link to a relative url/path</h3>
+                    <p>A relative file path points to a file relative to the current page.</p>
+                    <p>&lt;a href="about.html">Page in same folder as index.html&lt;/a></p>
+                    <p>&lt;img src="images/images.jpg" alt="description of image /></p>
+                    <p>&lt;link href="../css/style.css" rel="stylesheet"></p>
+                <h3>Link to element on the same page</h3>
+                    <p>&lt;a href="#product">Product&lt;/a></p>
+                    <p>&lt;section id="product"></p>
+        </section>
+
+        <section id="Commenting in HTML">
+            <h2>Commenting in HTML</h2>
+                <p>&lt;!-- Write your comments here --></p>
+        </section>
+
+        <section id="Landmark roles">
+            <h2>Landmark roles</h2>
+                <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within our sites.</p>
+
+            <h3>&lt;header role="banner"></h3>
+                <p>This role is for defining an element as the masthead, added to the primary &lt;header>.</p>
+
+            <h3>&lt;nav role="navigation"></h3>
+                <p>This role is for defining an element as then primary navigation, added the the top &lt;nav>.</p>
+
+            <h3>&lt;main role="main"></h3>
+                <p>This role is for defining an element as being the main content of the page, added to the &lt;main>.</p>
+
+            <h3>&lt;aside role="complimentary"></h3>
+                <p>This role is for defining an element as being content related to the primary content,usually added to an &lt;aside>.</p>
+
+            <h3>&lt:footer role="contentinfo"></h3>
+                <p>This role is for defining an element as information about the content: e.g.copyright, terms, privacy policy, usually added to a &lt;footer>.</p>
+        </section>
+
+        <section id="Labeling links">
+            <h2>Labeling links</h2>
+                <p>Adding arialabel attribute provides the user with a nonvisual label that will only be announced by screen readers.</p>
+                <p>&lt;a href="#" aria-label="Description of what the user will click through to, would go here">Read more&lt;/a></p>
+        </section>
+
+        <section id="Skip links">
+            <h2>Skip links</h2>
+                <p>Skip links are placed at the top of your page and offer users a way to jump to specific areas of the page.</p>
+                <p>&lt;a href="#nav"> (in header)</p>
+                <p>&lt;nav role="navigation" id="nav">&lt;/nav></p>
+        </section>
+    </main>
+
+</body>
+
+<footer>
+    <a href="#banner">Back to top</a>
+</footer>
+
+</html>
